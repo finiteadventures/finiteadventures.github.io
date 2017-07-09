@@ -1,0 +1,24 @@
+{
+  "name": "finiteadventures.github.io",
+  "version": "0.0.0",
+  "description": "Adventuring finitely.",
+  "main": "index.html",
+  "scripts": {
+    "serve": "jekyll serve --config _config.yml,_config-dev.yml"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/finiteadventures/finiteadventures.github.io.git"
+  },
+  "keywords": [
+    "portfolio",
+    "blog",
+    "jekyll"
+  ],
+  "author": "Sarah Quigley",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/finiteadventures/finiteadventures.github.io/issues"
+  },
+  "homepage": "https://github.com/finiteadventures/finiteadventures.github.io#readme"
+}
