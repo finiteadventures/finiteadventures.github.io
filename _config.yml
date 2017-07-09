@@ -5,3 +5,7 @@ url: "http://finiteadventures.com" # the base hostname & protocol for your site
 # Build settings
 environment: production
 source: ./src
+plugins:
+  - jekyll-autoprefixer
+sass:
+  sass_dir: _styles

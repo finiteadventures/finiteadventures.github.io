@@ -5,3 +5,4 @@ source "https://rubygems.org"
 
 gem 'jekyll', '3.5.0'
 gem 'bundler', '1.15.1'
+gem 'jekyll-autoprefixer', '1.0.1'
