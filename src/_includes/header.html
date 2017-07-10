@@ -1,12 +1,15 @@
 <header>
   <h1><a href="{{ site.url }}">{{ site.title_formatted }}</a></h1>
+  <div><a href="{{ site.social.patreon }}">Support</a></div>
   <nav>
     {% for nav_item in site.nav %}
       <div>
-        {% if nav_item.icon %}
-        <div><img src="{{ site.baseurl }}/assets/icons/{{ navitem.icon }}" alt="Explore {{ nav_item.title }}"/>
-        {% endif %}
-        <div><a href="{{ site.baseurl }}/{{ nav_item.slug }}">{{ nav_item.title }}</a></div>
+        <a href="{{ site.baseurl }}/{{ nav_item.slug }}" title="{{ nav_item.description }}">
+          {% if nav_item.icon %}
+          <div><img src="{{ site.baseurl }}/assets/icons/{{ navitem.icon }}" alt="{{ nav_item.title }}"/>
+          {% endif %}
+          <div>{{ nav_item.title }}</div>
+        </a>
       </div>
     {% endfor %}
   </nav>

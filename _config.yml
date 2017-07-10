@@ -3,10 +3,13 @@ title_formatted: Finite <span>Adventures</span>
 nav:
   - title: Adventures
     slug: adventures
+    description: Some more finite than others
   - title: Musings
     slug: musings
+    description: Like adventures, but smaller
   - title: Bearings
     slug: bearings
+    description: Pack your compass
 url: "http://finiteadventures.com" # the base hostname & protocol for your site
 baseurl: "" # the subpath of your site, e.g. /blog
 
