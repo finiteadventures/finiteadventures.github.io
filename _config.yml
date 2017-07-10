@@ -1,6 +1,14 @@
 title: Finite Adventures
-baseurl: "" # the subpath of your site, e.g. /blog
+title_formatted: Finite <span>Adventures</span>
+nav:
+  - title: Adventures
+    slug: adventures
+  - title: Musings
+    slug: musings
+  - title: Bearings
+    slug: bearings
 url: "http://finiteadventures.com" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog
 
 # Build settings
 environment: production
