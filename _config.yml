@@ -1,22 +1,78 @@
 title: Finite Adventures
 title_formatted: Finite <span>Adventures</span>
-nav:
-  - title: Adventures
-    slug: adventures
-    description: Some more finite than others
-  - title: Musings
-    slug: musings
-    description: Like adventures, but smaller
-  - title: Bearings
-    slug: bearings
-    description: Pack your compass
+tagline: Make your own adventures
 url: "http://finiteadventures.com" # the base hostname & protocol for your site
 baseurl: "" # the subpath of your site, e.g. /blog
+permalink: pretty
+email: finiteadventures@sarahquigley.net
+autor:
+  name: Sarah Quigley
+  email: sarah@sarahquigley.net
+
+# Collections
+collections:
+  projects:
+    output: true
 
 # Build settings
 environment: production
 source: ./src
 plugins:
   - jekyll-autoprefixer
+  - jekyll-responsive-image
 sass:
   sass_dir: _styles
+
+# Jekyll Responsive Image
+uploads_path: media
+responsive_image:
+  template: _includes/image.html
+  default_quality: 90
+  sizes:
+    - width: 480
+    - width: 620
+    - width: 768
+    - width: 1000
+    - width: 1400
+    - width: 2000
+  base_path: uploads
+  output_path_format: media/resized/%{dirname}/%{width}/%{basename}
+
+# Accounts
+accounts:
+  - name: Finite-Adventures-379709709070017
+    type: facebook
+    visible: true
+    baseurl: http://www.facebook.com/
+  - name: finitevagabond
+    type: twitter
+    visible: true
+    baseurl: https://twitter.com/
+  - name: finiteadventurer
+    type: instagram
+    visible: true
+    baseurl: https://www.instagram.com/
+  - name: sarah-quigley-542895767
+    type: soundcloud
+    visible: true
+    baseurl:
+  - name: sarahquigley
+    type: medium
+    visible: true
+    baseurl: https://soundcloud.com/
+  - name: finiteadventures
+    type: github
+    visible: true
+    baseurl: https://github.com/
+  - name: finiteventures
+    type: redbubble
+    visible: true
+    baseurl: https://www.redbubble.com/people/
+  - name: finiteadventures
+    type: patreon
+    visible: true
+    baseurl: https://www.patreon.com/
+  - name: finiteadventures
+    type: spoonflower
+    visible: true
+    baseurl: https://www.spoonflower.com/profiles/

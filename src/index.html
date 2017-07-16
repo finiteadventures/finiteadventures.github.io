@@ -2,4 +2,18 @@
 layout: default
 ---
 
-<h1>{{ site.title }}</h1>
+<section>
+{% assign projects = site.projects | sort: 'date' | reverse %}
+{% for project in projects limit:4 %}
+  {% include thumbnail-adventure.html item=project %}
+{% endfor %}
+</section>
+
+<section>
+{% for post in site.posts limit:2 %}
+  {% include thumbnail-musing.html item=post %}
+{% endfor %}
+</section>
+
+<section>
+</section>

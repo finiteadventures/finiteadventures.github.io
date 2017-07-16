@@ -1,14 +1,18 @@
 <header>
   <h1><a href="{{ site.url }}">{{ site.title_formatted }}</a></h1>
-  <div><a href="{{ site.social.patreon }}">Support</a></div>
+  {% assign patreon = site.accounts | where: "type", "patreon" | first %}
+  {% if patreon and patreon.visible %}
+  <div><a href="{{ patreon.baseurl }}{{ patreon.name }}">Support</a></div>
+  {% endif %}
   <nav>
-    {% for nav_item in site.nav %}
+    {% assign pages = site.pages | where: "nav_visible", true | sort: "nav_order" %}
+    {% for page in pages %}
       <div>
-        <a href="{{ site.baseurl }}/{{ nav_item.slug }}" title="{{ nav_item.description }}">
-          {% if nav_item.icon %}
-          <div><img src="{{ site.baseurl }}/assets/icons/{{ navitem.icon }}" alt="{{ nav_item.title }}"/>
+        <a href="{{ site.url }}{{ site.baseurl }}{{ page.url }}" title="{{ page.nav_description }}">
+          {% if page.nav_icon %}
+          <div><img src="{{ site.baseurl }}/assets/icons/{{ page.nav_icon }}" alt="{{ page.title }}"/>
           {% endif %}
-          <div>{{ nav_item.title }}</div>
+          <div>{{ page.title }}</div>
         </a>
       </div>
     {% endfor %}

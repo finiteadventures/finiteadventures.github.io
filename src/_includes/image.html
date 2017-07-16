@@ -1,0 +1,26 @@
+{% capture srcset %}
+    {% for i in resized %}
+      {{ site.url }}/{{ i.path }} {{ i.width }}w,
+    {% endfor %}
+{% endcapture %}
+
+{% if size == 1 %}
+  {% assign flex = 1 %}
+{% else %}
+  {% assign flex = original.width | plus: 0.0 | divided_by: original.height %}
+{% endif %}
+
+<div class="image-container" style="flex: {{ flex }} 1 0%">
+  {% assign mainImage = resized | where: "width", 2000 | first %}
+  {% if mainImage == nil %}
+    {% assign mainImage = original %}
+  {% endif %}
+
+  {% if image-popup %}
+  <a class="image-popup" href="{{ site.url }}/{{ mainImage.path }}">
+  {% endif %}
+  <img src="{{ site.url }}/{{ mainImage.path }}" alt="{{ alt }}" srcset="{{ srcset | strip_newlines }} {{ site.url }}/{{ original.path }} {{ original.width }}w">
+  {% if image-popup %}
+  </a>
+  {% endif %}
+</div>

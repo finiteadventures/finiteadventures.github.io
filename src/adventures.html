@@ -1,6 +1,18 @@
 ---
 title: Adventures
 layout: default
+description:
+
+nav_order: 1
+nav_visible: true
+nav_description: Some more finite than others
 ---
 
 <h1>Adventures</h1>
+
+<section>
+{% assign projects = site.projects | sort: 'date' | reverse %}
+{% for project in projects limit:12 %}
+  {% include thumbnail-adventure.html item=project %}
+{% endfor %}
+</section>

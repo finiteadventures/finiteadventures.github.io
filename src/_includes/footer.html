@@ -1,0 +1,13 @@
+<footer>
+  <div>
+    {% for account in site.accounts %}
+      <a href="{{ account.baseurl }}{{ account.name }}">{{ account.type }}</a>
+    {% endfor %}
+  </div>
+  <div>
+    {% include form-mailchimp.html %}
+    <div>{{ site.tagline }}</div>
+    <div>© {{ site.title }} {{ site.time | date: '%Y' }}</div>
+    <div><a href="mailto:{{ site.email }}">{{ site.email }}</a></div>
+  </div>
+</footer>

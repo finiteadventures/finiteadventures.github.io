@@ -1,0 +1,10 @@
+{% assign item=include.item %}
+
+<a href="{{ site.url }}{{ site.baseurl }}{{ item.url }}">
+<article>
+  <header>
+    <h1>{{ item.title }}</h1>
+  </header>
+  <p>{{ item.excerpt }}</p>
+</article>
+</a>
