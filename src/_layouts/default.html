@@ -8,13 +8,16 @@
   <title>{% if page.title %}{{ page.title | escape }}{% endif %}{% if site.title and page.title %} | {% endif %}{% if site.title %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
   <meta name="keywords" content="" />
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: full_base_url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | prepend: full_base_url }}">
+  <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ site.url }}{{ site.baseurl }}feed.xml">
+  <link rel="stylesheet" href="{{ site.url }}/styles/main.css">
 </head>
 
 <body>
   {% include header.html %}
-  {{ content }}
+  <section id="content--site">
+    {{ content }}
+  </section>
   {% include footer.html %}
 </body>
 </html>

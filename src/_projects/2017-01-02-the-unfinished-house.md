@@ -1,6 +1,7 @@
 ---
 layout: project
 title:  "The Unfinished House"
+category: poetry
 categories: books, writing, poetry, illustration, bookcraft
 excerpt: |
   Meet __The Unfinished House__, a slim volume of poems assembled from my strange and adventurous year of writing a poem every day.

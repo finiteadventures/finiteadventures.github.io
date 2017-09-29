@@ -2,18 +2,22 @@
 layout: default
 ---
 
-<section>
+<section class="gallery-adventure">
 {% assign projects = site.projects | sort: 'date' | reverse %}
 {% for project in projects limit:4 %}
   {% include thumbnail-adventure.html item=project %}
 {% endfor %}
 </section>
+{% include divider-more.html page='Adventures' %}
 
-<section>
+<section class="gallery-musing">
+<h1 class="feature center">Latest Musings</h1>
 {% for post in site.posts limit:2 %}
   {% include thumbnail-musing.html item=post %}
 {% endfor %}
 </section>
+{% include divider-more.html page='Musings' %}
 
 <section>
 </section>
+{% include divider-more.html page='Bearings' %}

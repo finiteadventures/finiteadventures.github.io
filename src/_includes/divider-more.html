@@ -1,0 +1,2 @@
+{% assign page = site.pages | where: "title", include.page | first %}
+<a href="{{ site.url }}{{ site.baseurl }}{{ page.url }}"><div class="divider-more">{{ page.title }}</div></a>

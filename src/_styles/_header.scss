@@ -1,0 +1,70 @@
+#header--site {
+  font-size: 1rem;
+  padding: 1em 1.25em 3.33em 1.25em;
+  position: relative;
+
+  h1 {
+    font-family: $font-family--feature;
+    font-size: 2.75em;
+    margin: 0;
+
+
+    span {
+      font-family: $font-family--feature-secondary;
+      font-size: 0.88em;
+    }
+  }
+
+  img {
+    height: 4.25em;
+    padding-bottom: 1em;
+  }
+
+  nav,
+  .cta {
+    font-family: $font-family--headline;
+    text-transform: uppercase;
+  }
+
+  .cta {
+    background: $color-background--secondary;
+    color: $color-text--secondary;
+    padding: 0.33em 0.66em;
+    position: absolute;
+    right: 1.25em;
+    top: 0;
+
+    a {
+      color: inherit;
+    }
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 1.5em;
+
+    > div {
+      text-align: center;
+      flex: 0 0 5.5em;
+    }
+  }
+
+  @media(min-width: $breakpoint-md) {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    justify-content: space-between;
+
+    h1 {
+      font-size: 4.58em;
+      flex: 0 0 5.27em;
+    }
+
+    nav {
+      flex: 0 0 24.17em;
+    }
+  }
+}

@@ -1,3 +1,106 @@
-body {
-  background-color: green;
+// Colour Variables
+
+$white: white;
+$grey--light: rgba(247, 247, 247, 1);
+$grey--medium: rgba(195, 191, 185, 1);
+$grey--dark: rgba(174, 169, 160, 1);
+$charcoal: rgba(51, 51, 51, 1);
+$black: rgba(37, 33, 34, 1);
+
+$color-background--primary: $grey--light;
+$color-background--secondary: $white;
+$color-background--divider-light: $grey--medium;
+$color-background--divider-dark: $grey--dark;
+$color-text--primary: $charcoal;
+$color-text--secondary: $grey--medium;
+$color-text--emphasis: $black;
+$color-text--highlight: $white;
+
+// Font Variables
+$font-family--text: 'Open Sans', sans-serif;
+$font-family--headline: 'Roboto Condensed', sans-serif;
+$font-family--feature: 'Amatic SC', sans-serif;
+$font-family--feature-secondary: 'Kristi', cursive;
+
+// Breakpoints
+$breakpoint-md: 670px;
+$breakpoint-lg: 1020px;
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  background-color: $color-background--primary;
+  color: $color-text--primary;
+  font-family: $font-family--text;
+  font-size: 3.75vw;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-family--headline;
+
+  &.feature {
+    font-family: $font-family--feature;
+  }
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2.3em;
+}
+
+h3 {
+  font-size: 2.1em;
+}
+
+h4 {
+  font-size: 1.9em;
+}
+
+h5 {
+  font-size: 1.7em;
+}
+
+h6 {
+  font-size: 1.5em;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.667em;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+a {
+  color: $color-text--emphasis;
+  font-size: inherit;
+  text-decoration: none;
+
+  &:hover {
+
+  }
+
+  &:focus {
+
+  }
+
+  &:visited {
+
+  }
+}
+
+.center {
+  text-align: center;
 }

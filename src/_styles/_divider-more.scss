@@ -1,0 +1,19 @@
+.divider-more {
+  background: $color-background--divider-light;
+  color: $color-text--highlight;
+  font-family: $font-family--headline;
+  height: calc(40em/12);
+  line-height: calc(40em/12);
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+
+  &:before {
+    background: linear-gradient($color-background--divider-light, transparent);
+    content: "";
+    height: calc(80em/12);
+    position: relative;
+    top: 0;
+    width: 100%;
+  }
+}

@@ -3,3 +3,4 @@ src/media/resized/
 *.log
 .sass-cache
 .DS_Store
+node_modules/

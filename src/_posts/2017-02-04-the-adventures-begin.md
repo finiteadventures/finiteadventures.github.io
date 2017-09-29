@@ -3,10 +3,10 @@ layout: post
 title:  "The Adventures Begin"
 categories: art
 image:
-  feature: pic01.jpg
+  feature: IMG_20140206_154605.jpg
   credit: Sarah Quigley
   creditlink: "http://sarahquigley.net"
-  thumb: pic01.jpg
+  thumb: IMG_20140206_154605.jpg
 ---
 
 Actually the adventures began along time ago. When the universe was small but mighty. When a single cell divided into two. When the first loaf of really good bread was baked. When Vikings sailed the ocean blue. When humans walked on the moon. But I'm not here to talk about those adventures, I'm here to tell you about the finite adventures of one small human being known as Sarah. (That's me.)

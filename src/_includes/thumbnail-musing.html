@@ -1,10 +1,12 @@
 {% assign item=include.item %}
 
-<a href="{{ site.url }}{{ site.baseurl }}{{ item.url }}">
-<article>
-  <header>
-    <h1>{{ item.title }}</h1>
-  </header>
-  <p>{{ item.excerpt }}</p>
+<article class="thumbnail-musing">
+  <a href="{{ site.url }}{{ site.baseurl }}{{ item.url }}">
+    <header>
+      <aside>{{ item.date | date: "%B %d, %Y" }}</aside>
+      <h1>{{ item.title }}</h1>
+    </header>
+    {% include image-group.html images=item.image.thumb item=item %}
+    {{ item.excerpt | markdownify }}
+  </a>
 </article>
-</a>

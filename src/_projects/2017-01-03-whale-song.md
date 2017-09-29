@@ -3,7 +3,8 @@ layout: project
 title:  "Whale Song"
 excerpt: |
   __Whale Song__ is a tender and bittersweet tale of a sea whale and a sky whale who fall in love, brought to life by unique colourful illustrations.
-categories: books, writing, illustration, picture books
+category: picture book
+categories: book, writing, illustration, picture book
 image:
   feature: DSC_0323.jpg
   credit: Sarah Quigley

@@ -1,0 +1,44 @@
+.thumbnail-adventure {
+  background-color: $color-background--secondary;
+
+  > a {
+    color: $color-text--primary;
+  }
+
+  aside {
+    color: $color-text--secondary;
+    font-style: italic;
+    font-weight: 300;
+    text-align: right;
+  }
+
+  section {
+    padding: 2em;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  @media (min-width: $breakpoint-md) {
+    flex: 0 0 calc(50% - 1.25em);
+    font-size: 0.5rem;
+
+    &:nth-child(3) {
+      display: none
+    }
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    flex: 0 0 calc(33.33% - 1.67em);
+    font-size: 0.33rem;
+
+    &:nth-child(3) {
+      display: block;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}

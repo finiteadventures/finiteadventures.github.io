@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/finiteadventures/finiteadventures.github.io/issues"
   },
-  "homepage": "https://github.com/finiteadventures/finiteadventures.github.io#readme"
+  "homepage": "https://github.com/finiteadventures/finiteadventures.github.io#readme",
+  "dependencies": {
+    "normalize-scss": "^7.0.0"
+  }
 }

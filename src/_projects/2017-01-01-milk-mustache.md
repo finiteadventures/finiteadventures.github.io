@@ -1,7 +1,10 @@
 ---
 layout: project
 title:  "Milk Mustache"
-categories: food, writing, food photography, photography
+category: recipe blog
+categories: recipe blog, food, writing, food photography, photography
+excerpt: |
+  __Milk Mustache__ is a food blog with very tasty things on it, like jalapeno and pineapple cornbread and chocolate cake. Sometimes new recipes appear.
 image:
   feature: DSC_1670.jpg
   credit: Sarah Quigley
